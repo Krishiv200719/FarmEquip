@@ -1,0 +1,271 @@
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 30px;
+}
+
+.equipment-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border: 1px solid var(--gray-200);
+}
+
+.equipment-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--green-300);
+}
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16/10;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.equipment-card:hover .card-image img {
+    transform: scale(1.08);
+}
+
+.card-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-available {
+    background: rgba(92, 184, 92, 0.9);
+    color: var(--white);
+}
+
+.badge-popular {
+    background: rgba(200, 169, 81, 0.9);
+    color: var(--white);
+}
+
+.badge-new {
+    background: rgba(74, 158, 63, 0.9);
+    color: var(--white);
+}
+
+.card-body {
+    padding: 24px;
+}
+
+.card-category {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--green-600);
+    margin-bottom: 8px;
+}
+
+.card-body h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: var(--green-900);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card-specs {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.spec-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--gray-600);
+    background: var(--gray-100);
+    padding: 6px 12px;
+    border-radius: 50px;
+}
+
+.spec-item svg {
+    width: 14px;
+    height: 14px;
+    fill: var(--green-600);
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid var(--gray-200);
+}
+
+.card-price {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--green-800);
+}
+
+.card-price span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--gray-500);
+}
+
+.card-link {
+    padding: 10px 20px;
+    background: var(--green-100);
+    color: var(--green-700);
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.card-link:hover {
+    background: var(--green-700);
+    color: var(--white);
+}
+
+.catalog-filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 24px;
+    border: 2px solid var(--gray-200);
+    border-radius: 50px;
+    background: var(--white);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--gray-600);
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: 'Inter', sans-serif;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    border-color: var(--green-500);
+    background: var(--green-50);
+    color: var(--green-700);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    min-width: 800px;
+}
+
+.comparison-table thead {
+    background: linear-gradient(135deg, var(--green-800) 0%, var(--green-700) 100%);
+}
+
+.comparison-table th {
+    padding: 18px 24px;
+    text-align: left;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.comparison-table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--gray-200);
+    font-size: 0.9rem;
+    color: var(--gray-700);
+}
+
+.comparison-table tbody tr {
+    transition: var(--transition);
+}
+
+.comparison-table tbody tr:hover {
+    background: var(--green-50);
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table .highlight-row {
+    background: var(--green-50);
+    font-weight: 600;
+}
+
+.table-equipment-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    color: var(--green-900);
+}
+
+.table-equipment-name img {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm);
+    object-fit: cover;
+}
+
+.table-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tag-diesel {
+    background: var(--earth-200);
+    color: var(--earth-800);
+}
+
+.tag-electric {
+    background: var(--green-100);
+    color: var(--green-700);
+}
+
+@media (max-width: 768px) {
+    .equipment-grid {
+        grid-template-columns: 1fr;
+    }
+}

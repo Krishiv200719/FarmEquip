@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Check equipment availability and book your agricultural machinery at FarmEquip. Real-time booking validation and rental cost calculator.">
+    <title>Check Availability | FarmEquip</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="availability.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="FarmEquip Logo" class="nav-logo-img">
+                FarmEquip
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="availability.html" class="active">Availability</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="availability.html" class="nav-cta">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger"
+                aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <header class="page-header avail-hero">
+        <div class="hero-content">
+            <span class="hero-badge">📅 Real-Time Availability</span>
+            <h1>Book Your Equipment</h1>
+            <p>Select your machinery, pick your dates, and get an instant cost estimate — all in one place.</p>
+        </div>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Machines</span>
+            </div>
+            <div class="hero-stat">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Uptime</span>
+            </div>
+            <div class="hero-stat">
+                <span class="stat-number">24h</span>
+                <span class="stat-label">Support</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section class="section booking-section">
+        <div class="container">
+            <div class="booking-layout">
+                <!-- Left: Form Card -->
+                <div class="booking-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2>Equipment Booking</h2>
+                            <p>Fill in the details below to check availability.</p>
+                        </div>
+                    </div>
+
+                    <div class="form-steps">
+                        <div class="step active" data-step="1">
+                            <span class="step-number">1</span>
+                            <span class="step-text">Equipment</span>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step" data-step="2">
+                            <span class="step-number">2</span>
+                            <span class="step-text">Duration</span>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step" data-step="3">
+                            <span class="step-number">3</span>
+                            <span class="step-text">Dates</span>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group full-width">
+                            <label for="equipmentSelect">
+                                <span class="label-icon">🚜</span> Equipment
+                            </label>
+                            <select id="equipmentSelect">
+                                <option value="1">AgriPro 7200 Tractor — ₹250/day</option>
+                                <option value="2">HarvestKing 9500 Combine — ₹450/day</option>
+                                <option value="3">SeedMaster 3000 Planter — ₹150/day</option>
+                                <option value="4">TerraForce 1500 Cultivator — ₹120/day</option>
+                                <option value="5">CropGuard 800 Sprayer — ₹300/day</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="rentalDuration">
+                                <span class="label-icon">⏳</span> Rental Duration
+                            </label>
+                            <select id="rentalDuration">
+                                <option value="custom">Custom Dates</option>
+                                <option value="7">1 Week</option>
+                                <option value="14">2 Weeks</option>
+                                <option value="30">1 Month</option>
+                                <option value="90">Full Season (3 Months)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="startDate">
+                                <span class="label-icon">📆</span> Start Date
+                            </label>
+                            <input type="date" id="startDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="endDate">
+                                <span class="label-icon">📆</span> End Date
+                            </label>
+                            <input type="date" id="endDate">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary check-btn" id="checkAvailability">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        Check Availability & Calculate Cost
+                    </button>
+                </div>
+
+                <!-- Right: Summary Card -->
+                <div class="summary-card" id="bookingSummary">
+                    <div class="summary-placeholder" id="summaryPlaceholder">
+                        <div class="placeholder-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Booking Summary</h3>
+                        <p>Select equipment and dates, then click <strong>"Check Availability"</strong> to see your cost
+                            breakdown here.</p>
+                    </div>
+                    <div class="summary-result" id="summaryResult" style="display:none;">
+                        <div class="summary-header">
+                            <span class="summary-icon">📋</span>
+                            <h3>Booking Summary</h3>
+                        </div>
+                        <div id="availStatus"></div>
+                        <div id="summaryDetails"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booked Dates Section -->
+    <section class="section booked-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Booking Info</span>
+                <h2>Already Booked Dates</h2>
+                <p>Below are the currently booked date ranges for each piece of equipment.</p>
+            </div>
+            <div class="booked-grid">
+                <!-- AgriPro 7200 -->
+                <div class="booked-card">
+                    <div class="booked-card-header">
+                        <img src="images/tractor.png" alt="AgriPro 7200">
+                        <div>
+                            <h4>AgriPro 7200</h4>
+                            <span class="booked-type">Tractor</span>
+                        </div>
+                    </div>
+                    <div class="booked-dates-list">
+                        <div class="date-range">
+                            <div class="date-chip">
+                                <span class="date-label">From</span>
+                                <span class="date-value">Mar 10, 2026</span>
+                            </div>
+                            <span class="date-arrow">→</span>
+                            <div class="date-chip">
+                                <span class="date-label">Until</span>
+                                <span class="date-value">Mar 15, 2026</span>
+                            </div>
+                            <span class="booked-badge">Booked</span>
+                        </div>
+                        <div class="date-range">
+                            <div class="date-chip">
+                                <span class="date-label">From</span>
+                                <span class="date-value">Mar 25, 2026</span>
+                            </div>
+                            <span class="date-arrow">→</span>
+                            <div class="date-chip">
+                                <span class="date-label">Until</span>
+                                <span class="date-value">Apr 5, 2026</span>
+                            </div>
+                            <span class="booked-badge">Booked</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HarvestKing 9500 -->
+                <div class="booked-card">
+                    <div class="booked-card-header">
+                        <img src="images/harvester.png" alt="HarvestKing 9500">
+                        <div>
+                            <h4>HarvestKing 9500</h4>
+                            <span class="booked-type">Combine Harvester</span>
+                        </div>
+                    </div>
+                    <div class="booked-dates-list">
+                        <div class="date-range">
+                            <div class="date-chip">
+                                <span class="date-label">From</span>
+                                <span class="date-value">Mar 5, 2026</span>
+                            </div>
+                            <span class="date-arrow">→</span>
+                            <div class="date-chip">
+                                <span class="date-label">Until</span>
+                                <span class="date-value">Mar 12, 2026</span>
+                            </div>
+                            <span class="booked-badge">Booked</span>
+                        </div>
+                        <div class="date-range">
+                            <div class="date-chip">
+                                <span class="date-label">From</span>
+                                <span class="date-value">Apr 1, 2026</span>
+                            </div>
+                            <span class="date-arrow">→</span>
+                            <div class="date-chip">
+                                <span class="date-label">Until</span>
+                                <span class="date-value">Apr 10, 2026</span>
+                            </div>
+                            <span class="booked-badge">Booked</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SeedMaster 3000 -->
+                <div class="booked-card">
+                    <div class="booked-card-header">
+                        <img src="images/seeder.png" alt="SeedMaster 3000">
+                        <div>
+                            <h4>SeedMaster 3000</h4>
+                            <span class="booked-type">Planter</span>
+                        </div>
+                    </div>
+                    <div class="booked-dates-list">
+                        <div class="date-range">
+                            <div class="date-chip">
+                                <span class="date-label">From</span>
+                                <span class="date-value">Mar 18, 2026</span>
+                            </div>
+                            <span class="date-arrow">→</span>
+                            <div class="date-chip">
+                                <span class="date-label">Until</span>
+                                <span class="date-value">Mar 28, 2026</span>
+                            </div>
+                            <span class="booked-badge">Booked</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TerraForce 1500 -->
+                <div class="booked-card">
+                    <div class="booked-card-header">
+                        <img src="images/cultivator.png" alt="TerraForce 1500">
+                        <div>
+                            <h4>TerraForce 1500</h4>
+                            <span class="booked-type">Cultivator</span>
+                        </div>
+                    </div>
+                    <div class="booked-dates-list">
+                        <div class="date-range">
+                            <div class="date-chip">
+                                <span class="date-label">From</span>
+                                <span class="date-value">Mar 8, 2026</span>
+                            </div>
+                            <span class="date-arrow">→</span>
+                            <div class="date-chip">
+                                <span class="date-label">Until</span>
+                                <span class="date-value">Mar 14, 2026</span>
+                            </div>
+                            <span class="booked-badge">Booked</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CropGuard 800 -->
+                <div class="booked-card">
+                    <div class="booked-card-header">
+                        <img src="images/sprayer.png" alt="CropGuard 800">
+                        <div>
+                            <h4>CropGuard 800</h4>
+                            <span class="booked-type">Sprayer</span>
+                        </div>
+                    </div>
+                    <div class="booked-dates-list">
+                        <div class="date-range">
+                            <div class="date-chip">
+                                <span class="date-label">From</span>
+                                <span class="date-value">Mar 20, 2026</span>
+                            </div>
+                            <span class="date-arrow">→</span>
+                            <div class="date-chip">
+                                <span class="date-label">Until</span>
+                                <span class="date-value">Mar 26, 2026</span>
+                            </div>
+                            <span class="booked-badge">Booked</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="common.js"></script>
+    <script src="availability.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="View full specifications including engine power, fuel type, acreage suitability, and rental rates for FarmEquip agricultural machinery.">
+    <title>Equipment Details | FarmEquip</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="details.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="FarmEquip Logo" class="nav-logo-img">
+                FarmEquip
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="details.html" class="active">Details</a></li>
+                <li><a href="availability.html">Availability</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="availability.html" class="nav-cta">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger"
+                aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Equipment Details</h1>
+        <p>Full specifications, rental rates, and detailed information</p>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div style="max-width:400px;margin:0 auto 48px;">
+                <div class="form-group">
+                    <label for="equipmentSelectDetail">Select Equipment to View</label>
+                    <select id="equipmentSelectDetail">
+                        <option value="1">AgriPro 7200 Tractor</option>
+                        <option value="2">HarvestKing 9500 Combine</option>
+                        <option value="3">SeedMaster 3000 Planter</option>
+                        <option value="4">TerraForce 1500 Cultivator</option>
+                        <option value="5">CropGuard 800 Sprayer</option>
+                    </select>
+                </div>
+            </div>
+            <div class="detail-layout">
+                <div class="detail-image-wrapper">
+                    <img src="images/tractor.png" alt="Equipment image" id="detailImage">
+                </div>
+                <div class="detail-info">
+                    <span class="detail-category" id="detailCategory">Tractor</span>
+                    <h1 id="detailName">AgriPro 7200 Tractor</h1>
+                    <p id="detailDesc">Heavy-duty farming tractor with advanced hydraulic system.</p>
+                    <div class="detail-price-box">
+                        <div>
+                            <div style="font-size:0.8rem;opacity:0.8;text-transform:uppercase;letter-spacing:1px;">
+                                Starting From</div>
+                            <div class="detail-price" id="detailPrice">₹250 <span>/ day</span></div>
+                        </div>
+                        <a href="availability.html" class="btn btn-primary">Check Availability</a>
+                    </div>
+                    <h3
+                        style="font-family:'Inter',sans-serif;font-size:1.1rem;margin-bottom:16px;color:var(--green-800);">
+                        Technical Specifications</h3>
+                    <div class="specs-grid" id="detailSpecs"></div>
+                    <h3
+                        style="font-family:'Inter',sans-serif;font-size:1.1rem;margin-bottom:16px;color:var(--green-800);">
+                        Rental Rates</h3>
+                    <div style="background:var(--green-50);border:1px solid var(--green-200);border-radius:var(--radius-md);padding:20px;"
+                        id="detailRates"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section spec-table-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Full Comparison</span>
+                <h2>Detailed Specification Table</h2>
+                <p>All equipment compared across key performance and pricing metrics.</p>
+            </div>
+            <div class="spec-cards-grid">
+                <!-- AgriPro 7200 -->
+                <div class="spec-card">
+                    <div class="spec-card-top">
+                        <img src="images/tractor.png" alt="AgriPro 7200">
+                        <div>
+                            <h4>AgriPro 7200</h4>
+                            <span class="spec-card-type">Tractor</span>
+                        </div>
+                    </div>
+                    <div class="spec-pills">
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⚡ Engine</span>
+                            <span class="spec-pill-value">200 HP</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⛽ Fuel</span>
+                            <span class="spec-pill-value fuel-diesel">Diesel</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">🌾 Acreage</span>
+                            <span class="spec-pill-value">50–150 Acres</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⚖️ Weight</span>
+                            <span class="spec-pill-value">8,500 kg</span>
+                        </div>
+                    </div>
+                    <div class="spec-card-pricing">
+                        <div class="spec-price-chip">
+                            <span class="spec-price-label">Daily</span>
+                            <span class="spec-price-value">₹250</span>
+                        </div>
+                        <div class="spec-price-chip monthly">
+                            <span class="spec-price-label">Monthly</span>
+                            <span class="spec-price-value">₹5,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HarvestKing 9500 -->
+                <div class="spec-card">
+                    <div class="spec-card-top">
+                        <img src="images/harvester.png" alt="HarvestKing 9500">
+                        <div>
+                            <h4>HarvestKing 9500</h4>
+                            <span class="spec-card-type">Combine Harvester</span>
+                        </div>
+                    </div>
+                    <div class="spec-pills">
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⚡ Engine</span>
+                            <span class="spec-pill-value">350 HP</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⛽ Fuel</span>
+                            <span class="spec-pill-value fuel-diesel">Diesel</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">🌾 Acreage</span>
+                            <span class="spec-pill-value">100–300 Acres</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⚖️ Weight</span>
+                            <span class="spec-pill-value">14,200 kg</span>
+                        </div>
+                    </div>
+                    <div class="spec-card-pricing">
+                        <div class="spec-price-chip">
+                            <span class="spec-price-label">Daily</span>
+                            <span class="spec-price-value">₹450</span>
+                        </div>
+                        <div class="spec-price-chip monthly">
+                            <span class="spec-price-label">Monthly</span>
+                            <span class="spec-price-value">₹9,500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SeedMaster 3000 -->
+                <div class="spec-card">
+                    <div class="spec-card-top">
+                        <img src="images/seeder.png" alt="SeedMaster 3000">
+                        <div>
+                            <h4>SeedMaster 3000</h4>
+                            <span class="spec-card-type">Planter</span>
+                        </div>
+                    </div>
+                    <div class="spec-pills">
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⚡ Engine</span>
+                            <span class="spec-pill-value">PTO Driven</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⛽ Fuel</span>
+                            <span class="spec-pill-value fuel-na">N/A</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">🌾 Acreage</span>
+                            <span class="spec-pill-value">30–100 Acres</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⚖️ Weight</span>
+                            <span class="spec-pill-value">3,800 kg</span>
+                        </div>
+                    </div>
+                    <div class="spec-card-pricing">
+                        <div class="spec-price-chip">
+                            <span class="spec-price-label">Daily</span>
+                            <span class="spec-price-value">₹150</span>
+                        </div>
+                        <div class="spec-price-chip monthly">
+                            <span class="spec-price-label">Monthly</span>
+                            <span class="spec-price-value">₹3,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TerraForce 1500 -->
+                <div class="spec-card">
+                    <div class="spec-card-top">
+                        <img src="images/cultivator.png" alt="TerraForce 1500">
+                        <div>
+                            <h4>TerraForce 1500</h4>
+                            <span class="spec-card-type">Cultivator</span>
+                        </div>
+                    </div>
+                    <div class="spec-pills">
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⚡ Engine</span>
+                            <span class="spec-pill-value">PTO Driven</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⛽ Fuel</span>
+                            <span class="spec-pill-value fuel-na">N/A</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">🌾 Acreage</span>
+                            <span class="spec-pill-value">20–80 Acres</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⚖️ Weight</span>
+                            <span class="spec-pill-value">1,200 kg</span>
+                        </div>
+                    </div>
+                    <div class="spec-card-pricing">
+                        <div class="spec-price-chip">
+                            <span class="spec-price-label">Daily</span>
+                            <span class="spec-price-value">₹120</span>
+                        </div>
+                        <div class="spec-price-chip monthly">
+                            <span class="spec-price-label">Monthly</span>
+                            <span class="spec-price-value">₹2,200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CropGuard 800 -->
+                <div class="spec-card">
+                    <div class="spec-card-top">
+                        <img src="images/sprayer.png" alt="CropGuard 800">
+                        <div>
+                            <h4>CropGuard 800</h4>
+                            <span class="spec-card-type">Sprayer</span>
+                        </div>
+                    </div>
+                    <div class="spec-pills">
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⚡ Engine</span>
+                            <span class="spec-pill-value">180 HP</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⛽ Fuel</span>
+                            <span class="spec-pill-value fuel-diesel">Diesel</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">🌾 Acreage</span>
+                            <span class="spec-pill-value">50–200 Acres</span>
+                        </div>
+                        <div class="spec-pill">
+                            <span class="spec-pill-label">⚖️ Weight</span>
+                            <span class="spec-pill-value">9,800 kg</span>
+                        </div>
+                    </div>
+                    <div class="spec-card-pricing">
+                        <div class="spec-price-chip">
+                            <span class="spec-price-label">Daily</span>
+                            <span class="spec-price-value">₹300</span>
+                        </div>
+                        <div class="spec-price-chip monthly">
+                            <span class="spec-price-label">Monthly</span>
+                            <span class="spec-price-value">₹6,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="common.js"></script>
+    <script src="details.js"></script>
+</body>
+
+</html>

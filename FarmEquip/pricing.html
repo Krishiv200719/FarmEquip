@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="FarmEquip pricing plans - daily rental rates, seasonal packages, and discount comparison for agricultural equipment leasing.">
+    <title>Pricing & Packages | FarmEquip</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="pricing.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="FarmEquip Logo" class="nav-logo-img">
+                FarmEquip
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="availability.html">Availability</a></li>
+                <li><a href="pricing.html" class="active">Pricing</a></li>
+                <li><a href="availability.html" class="nav-cta">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger"
+                aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ── Hero ────────────────────────────── -->
+    <header class="page-header pricing-hero">
+        <div class="hero-content">
+            <span class="hero-badge">💰 Transparent Pricing</span>
+            <h1>Pricing & Packages</h1>
+            <p>Simple, honest pricing with seasonal discounts for every farming budget — no hidden fees, ever.</p>
+        </div>
+        <div class="hero-highlights">
+            <div class="highlight-pill">
+                <span class="pill-icon">🌱</span>
+                <span>Up to <strong>25% OFF</strong></span>
+            </div>
+            <div class="highlight-pill">
+                <span class="pill-icon">🚚</span>
+                <span>Free Delivery</span>
+            </div>
+            <div class="highlight-pill">
+                <span class="pill-icon">🛡️</span>
+                <span>No Hidden Fees</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ── Seasonal Packages ───────────────── -->
+    <section class="section packages-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Seasonal Packages</span>
+                <h2>Choose Your Plan</h2>
+                <p>Longer leases unlock bigger savings. Pick the package that fits your farming season.</p>
+            </div>
+            <div class="pricing-cards">
+                <!-- Planting Season -->
+                <article class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="season-icon">🌾</span>
+                        <h3>Planting Season</h3>
+                        <div class="pricing-amount">15<span class="percent">%</span> <span class="off-text">OFF</span>
+                        </div>
+                        <div class="pricing-meta">
+                            <span class="meta-chip">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                Min. 14 days
+                            </span>
+                            <span class="meta-chip">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                Feb – Apr
+                            </span>
+                        </div>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li>All seeders and cultivators included</li>
+                            <li>Free delivery within 50 km</li>
+                            <li>Basic operator training</li>
+                            <li>Standard maintenance support</li>
+                            <li>Flexible start dates</li>
+                        </ul>
+                        <a href="availability.html" class="btn btn-secondary pricing-cta">Book Planting Package</a>
+                    </div>
+                </article>
+
+                <!-- Growing Season (Featured) -->
+                <article class="pricing-card featured">
+                    <div class="featured-ribbon">Best Value</div>
+                    <div class="pricing-header">
+                        <span class="season-icon">☀️</span>
+                        <h3>Growing Season</h3>
+                        <div class="pricing-amount">20<span class="percent">%</span> <span class="off-text">OFF</span>
+                        </div>
+                        <div class="pricing-meta">
+                            <span class="meta-chip">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                Min. 21 days
+                            </span>
+                            <span class="meta-chip">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                May – Jul
+                            </span>
+                        </div>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li>All equipment categories included</li>
+                            <li>Free delivery within 100 km</li>
+                            <li>Full operator training</li>
+                            <li>Priority maintenance support</li>
+                            <li>Equipment swap option</li>
+                            <li>24/7 breakdown assistance</li>
+                        </ul>
+                        <a href="availability.html" class="btn btn-primary pricing-cta">Book Growing Package</a>
+                    </div>
+                </article>
+
+                <!-- Harvest Season -->
+                <article class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="season-icon">🍂</span>
+                        <h3>Harvest Season</h3>
+                        <div class="pricing-amount">25<span class="percent">%</span> <span class="off-text">OFF</span>
+                        </div>
+                        <div class="pricing-meta">
+                            <span class="meta-chip">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                Min. 30 days
+                            </span>
+                            <span class="meta-chip">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                Aug – Nov
+                            </span>
+                        </div>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li>Harvesters and combines priority</li>
+                            <li>Free delivery nationwide</li>
+                            <li>Expert operator on-site</li>
+                            <li>Premium support package</li>
+                            <li>Multi-equipment discount</li>
+                        </ul>
+                        <a href="availability.html" class="btn btn-secondary pricing-cta">Book Harvest Package</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Equipment Rate Cards ────────────── -->
+    <section class="section rates-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Daily Rates</span>
+                <h2>Equipment Rate Table</h2>
+                <p>Transparent daily, weekly, and monthly rental rates for all equipment.</p>
+            </div>
+            <div class="rate-cards-grid">
+                <!-- AgriPro 7200 -->
+                <div class="rate-card">
+                    <div class="rate-card-top">
+                        <img src="images/tractor.png" alt="AgriPro 7200">
+                        <div>
+                            <h4>AgriPro 7200</h4>
+                            <span class="rate-category">Tractor</span>
+                        </div>
+                    </div>
+                    <div class="rate-card-body">
+                        <div class="rate-item">
+                            <span class="rate-period">Daily</span>
+                            <span class="rate-price">₹250</span>
+                        </div>
+                        <div class="rate-item">
+                            <span class="rate-period">Weekly</span>
+                            <span class="rate-price">₹1,500</span>
+                        </div>
+                        <div class="rate-item highlighted">
+                            <span class="rate-period">Monthly</span>
+                            <span class="rate-price">₹5,000</span>
+                        </div>
+                    </div>
+                    <div class="rate-card-footer">
+                        <span class="best-for-tag">Best for: Large-scale farming</span>
+                    </div>
+                </div>
+
+                <!-- HarvestKing 9500 -->
+                <div class="rate-card">
+                    <div class="rate-card-top">
+                        <img src="images/harvester.png" alt="HarvestKing 9500">
+                        <div>
+                            <h4>HarvestKing 9500</h4>
+                            <span class="rate-category">Harvester</span>
+                        </div>
+                    </div>
+                    <div class="rate-card-body">
+                        <div class="rate-item">
+                            <span class="rate-period">Daily</span>
+                            <span class="rate-price">₹450</span>
+                        </div>
+                        <div class="rate-item">
+                            <span class="rate-period">Weekly</span>
+                            <span class="rate-price">₹2,800</span>
+                        </div>
+                        <div class="rate-item highlighted">
+                            <span class="rate-period">Monthly</span>
+                            <span class="rate-price">₹9,500</span>
+                        </div>
+                    </div>
+                    <div class="rate-card-footer">
+                        <span class="best-for-tag">Best for: Grain harvesting</span>
+                    </div>
+                </div>
+
+                <!-- SeedMaster 3000 -->
+                <div class="rate-card">
+                    <div class="rate-card-top">
+                        <img src="images/seeder.png" alt="SeedMaster 3000">
+                        <div>
+                            <h4>SeedMaster 3000</h4>
+                            <span class="rate-category">Seeder</span>
+                        </div>
+                    </div>
+                    <div class="rate-card-body">
+                        <div class="rate-item">
+                            <span class="rate-period">Daily</span>
+                            <span class="rate-price">₹150</span>
+                        </div>
+                        <div class="rate-item">
+                            <span class="rate-period">Weekly</span>
+                            <span class="rate-price">₹900</span>
+                        </div>
+                        <div class="rate-item highlighted">
+                            <span class="rate-period">Monthly</span>
+                            <span class="rate-price">₹3,000</span>
+                        </div>
+                    </div>
+                    <div class="rate-card-footer">
+                        <span class="best-for-tag">Best for: Precision planting</span>
+                    </div>
+                </div>
+
+                <!-- TerraForce 1500 -->
+                <div class="rate-card">
+                    <div class="rate-card-top">
+                        <img src="images/cultivator.png" alt="TerraForce 1500">
+                        <div>
+                            <h4>TerraForce 1500</h4>
+                            <span class="rate-category">Cultivator</span>
+                        </div>
+                    </div>
+                    <div class="rate-card-body">
+                        <div class="rate-item">
+                            <span class="rate-period">Daily</span>
+                            <span class="rate-price">₹120</span>
+                        </div>
+                        <div class="rate-item">
+                            <span class="rate-period">Weekly</span>
+                            <span class="rate-price">₹700</span>
+                        </div>
+                        <div class="rate-item highlighted">
+                            <span class="rate-period">Monthly</span>
+                            <span class="rate-price">₹2,200</span>
+                        </div>
+                    </div>
+                    <div class="rate-card-footer">
+                        <span class="best-for-tag">Best for: Soil preparation</span>
+                    </div>
+                </div>
+
+                <!-- CropGuard 800 -->
+                <div class="rate-card">
+                    <div class="rate-card-top">
+                        <img src="images/sprayer.png" alt="CropGuard 800">
+                        <div>
+                            <h4>CropGuard 800</h4>
+                            <span class="rate-category">Sprayer</span>
+                        </div>
+                    </div>
+                    <div class="rate-card-body">
+                        <div class="rate-item">
+                            <span class="rate-period">Daily</span>
+                            <span class="rate-price">₹300</span>
+                        </div>
+                        <div class="rate-item">
+                            <span class="rate-period">Weekly</span>
+                            <span class="rate-price">₹1,800</span>
+                        </div>
+                        <div class="rate-item highlighted">
+                            <span class="rate-period">Monthly</span>
+                            <span class="rate-price">₹6,000</span>
+                        </div>
+                    </div>
+                    <div class="rate-card-footer">
+                        <span class="best-for-tag">Best for: Crop protection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Season Comparison ───────────────── -->
+    <section class="section comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Discount Comparison</span>
+                <h2>Seasonal Package Comparison</h2>
+                <p>See how much you save with each seasonal package tier.</p>
+            </div>
+            <div class="comparison-cards">
+                <div class="comp-card">
+                    <div class="comp-header planting">
+                        <h4>🌾 Planting Season</h4>
+                        <span class="comp-discount">15% OFF</span>
+                    </div>
+                    <div class="comp-body">
+                        <div class="comp-row">
+                            <span class="comp-label">Season</span>
+                            <span class="comp-value">Feb – Apr</span>
+                        </div>
+                        <div class="comp-row">
+                            <span class="comp-label">Min. Duration</span>
+                            <span class="comp-value">14 days</span>
+                        </div>
+                        <div class="comp-row">
+                            <span class="comp-label">Delivery</span>
+                            <span class="comp-value">50 km free</span>
+                        </div>
+                        <div class="comp-row">
+                            <span class="comp-label">Support Level</span>
+                            <span class="comp-value">Standard</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp-card featured-comp">
+                    <div class="comp-featured-label">⭐ Most Popular</div>
+                    <div class="comp-header growing">
+                        <h4>☀️ Growing Season</h4>
+                        <span class="comp-discount">20% OFF</span>
+                    </div>
+                    <div class="comp-body">
+                        <div class="comp-row">
+                            <span class="comp-label">Season</span>
+                            <span class="comp-value">May – Jul</span>
+                        </div>
+                        <div class="comp-row">
+                            <span class="comp-label">Min. Duration</span>
+                            <span class="comp-value">21 days</span>
+                        </div>
+                        <div class="comp-row">
+                            <span class="comp-label">Delivery</span>
+                            <span class="comp-value">100 km free</span>
+                        </div>
+                        <div class="comp-row">
+                            <span class="comp-label">Support Level</span>
+                            <span class="comp-value">Priority</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp-card">
+                    <div class="comp-header harvest">
+                        <h4>🍂 Harvest Season</h4>
+                        <span class="comp-discount">25% OFF</span>
+                    </div>
+                    <div class="comp-body">
+                        <div class="comp-row">
+                            <span class="comp-label">Season</span>
+                            <span class="comp-value">Aug – Nov</span>
+                        </div>
+                        <div class="comp-row">
+                            <span class="comp-label">Min. Duration</span>
+                            <span class="comp-value">30 days</span>
+                        </div>
+                        <div class="comp-row">
+                            <span class="comp-label">Delivery</span>
+                            <span class="comp-value">Nationwide</span>
+                        </div>
+                        <div class="comp-row">
+                            <span class="comp-label">Support Level</span>
+                            <span class="comp-value">Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Quick Cost Calculator ───────────── -->
+    <section class="section calculator-section">
+        <div class="container">
+            <div class="calc-layout">
+                <div class="calc-info">
+                    <span class="section-tag">Calculator</span>
+                    <h2>Quick Cost Calculator</h2>
+                    <p>Estimate your total rental cost including applicable seasonal discounts. Choose your equipment
+                        and enter the number of rental days to get an instant breakdown.</p>
+                    <div class="calc-perks">
+                        <div class="perk">
+                            <span class="perk-icon">✅</span>
+                            <span>Instant cost breakdown</span>
+                        </div>
+                        <div class="perk">
+                            <span class="perk-icon">✅</span>
+                            <span>Auto-applied seasonal discounts</span>
+                        </div>
+                        <div class="perk">
+                            <span class="perk-icon">✅</span>
+                            <span>No commitment required</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc-card">
+                    <div class="calc-card-header">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                            <line x1="8" y1="6" x2="16" y2="6"></line>
+                            <line x1="8" y1="10" x2="10" y2="10"></line>
+                            <line x1="14" y1="10" x2="16" y2="10"></line>
+                            <line x1="8" y1="14" x2="10" y2="14"></line>
+                            <line x1="14" y1="14" x2="16" y2="14"></line>
+                            <line x1="8" y1="18" x2="10" y2="18"></line>
+                            <line x1="14" y1="18" x2="16" y2="18"></line>
+                        </svg>
+                        <h3>Estimate Your Cost</h3>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="calcEquipment">
+                                <span class="label-icon">🚜</span> Equipment
+                            </label>
+                            <select id="calcEquipment">
+                                <option value="1">AgriPro 7200 Tractor — ₹250/day</option>
+                                <option value="2">HarvestKing 9500 Combine — ₹450/day</option>
+                                <option value="3">SeedMaster 3000 Planter — ₹150/day</option>
+                                <option value="4">TerraForce 1500 Cultivator — ₹120/day</option>
+                                <option value="5">CropGuard 800 Sprayer — ₹300/day</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="calcDays">
+                                <span class="label-icon">📆</span> Number of Days
+                            </label>
+                            <input type="number" id="calcDays" min="1" placeholder="Enter rental days">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary check-btn" id="calculateCost">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                        Calculate Total Cost
+                    </button>
+                    <div class="calc-result" id="calcResult"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="common.js"></script>
+    <script src="pricing.js"></script>
+</body>
+
+</html>

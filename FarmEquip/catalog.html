@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Browse our complete catalog of tractors, harvesters, seeders, cultivators, and sprayers available for lease at FarmEquip.">
+    <title>Equipment Catalog | FarmEquip</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="FarmEquip Logo" class="nav-logo-img">
+                FarmEquip
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html" class="active">Catalog</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="availability.html">Availability</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="availability.html" class="nav-cta">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Equipment Catalog</h1>
+        <p>Browse our full range of agricultural equipment available for lease</p>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="catalog-filters">
+                <button class="filter-btn active" data-filter="all">All Equipment</button>
+                <button class="filter-btn" data-filter="Tractor">Tractors</button>
+                <button class="filter-btn" data-filter="Harvester">Harvesters</button>
+                <button class="filter-btn" data-filter="Seeder">Seeders</button>
+                <button class="filter-btn" data-filter="Cultivator">Cultivators</button>
+                <button class="filter-btn" data-filter="Sprayer">Sprayers</button>
+            </div>
+
+            <div class="equipment-grid">
+                <article class="equipment-card" data-category="Tractor">
+                    <div class="card-image">
+                        <img src="images/tractor.png" alt="AgriPro 7200 Tractor">
+                        <span class="card-badge badge-popular">Popular</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Tractor</div>
+                        <h3>AgriPro 7200 Tractor</h3>
+                        <p>Heavy-duty 200HP tractor ideal for plowing, tilling, and hauling across large farmlands.</p>
+                        <div class="card-specs">
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                200 HP
+                            </span>
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                Diesel
+                            </span>
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                50-150 Acres
+                            </span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">₹250 <span>/ day</span></div>
+                            <a href="details.html?id=1" class="card-link">View Details →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="equipment-card" data-category="Harvester">
+                    <div class="card-image">
+                        <img src="images/harvester.png" alt="HarvestKing 9500 Combine Harvester">
+                        <span class="card-badge badge-available">Available</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Harvester</div>
+                        <h3>HarvestKing 9500 Combine</h3>
+                        <p>High-capacity combine for wheat, corn, and soybean harvesting with advanced grain separation.
+                        </p>
+                        <div class="card-specs">
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                350 HP
+                            </span>
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                Diesel
+                            </span>
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                100-300 Acres
+                            </span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">₹450 <span>/ day</span></div>
+                            <a href="details.html?id=2" class="card-link">View Details →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="equipment-card" data-category="Seeder">
+                    <div class="card-image">
+                        <img src="images/seeder.png" alt="SeedMaster 3000 Planter">
+                        <span class="card-badge badge-new">New</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Seeder</div>
+                        <h3>SeedMaster 3000 Planter</h3>
+                        <p>Precision seed drill with variable-rate seeding for optimal crop spacing and germination
+                            rates.</p>
+                        <div class="card-specs">
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                PTO Driven
+                            </span>
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                N/A
+                            </span>
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                30-100 Acres
+                            </span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">₹150 <span>/ day</span></div>
+                            <a href="details.html?id=3" class="card-link">View Details →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="equipment-card" data-category="Cultivator">
+                    <div class="card-image">
+                        <img src="images/cultivator.png" alt="TerraForce 1500 Cultivator">
+                        <span class="card-badge badge-available">Available</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Cultivator</div>
+                        <h3>TerraForce 1500 Cultivator</h3>
+                        <p>Rotary tiller cultivator for seedbed preparation, weed control, and soil mixing operations.
+                        </p>
+                        <div class="card-specs">
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                PTO Driven
+                            </span>
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                N/A
+                            </span>
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                20-80 Acres
+                            </span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">₹120 <span>/ day</span></div>
+                            <a href="details.html?id=4" class="card-link">View Details →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="equipment-card" data-category="Sprayer">
+                    <div class="card-image">
+                        <img src="images/sprayer.png" alt="CropGuard 800 Sprayer">
+                        <span class="card-badge badge-available">Available</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Sprayer</div>
+                        <h3>CropGuard 800 Sprayer</h3>
+                        <p>Self-propelled boom sprayer with GPS-guided precision for pesticides, herbicides, and
+                            fertilizers.</p>
+                        <div class="card-specs">
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                180 HP
+                            </span>
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                Diesel
+                            </span>
+                            <span class="spec-item">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                50-200 Acres
+                            </span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">₹300 <span>/ day</span></div>
+                            <a href="details.html?id=5" class="card-link">View Details →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--green-50);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Compare Equipment</span>
+                <h2>Equipment Comparison</h2>
+                <p>Compare specifications side-by-side to find the perfect equipment for your farming needs.</p>
+            </div>
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Equipment</th>
+                            <th>Engine Power</th>
+                            <th>Fuel Type</th>
+                            <th>Acreage Suitability</th>
+                            <th>Daily Rate</th>
+                            <th>Weekly Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight-row">
+                            <td>
+                                <div class="table-equipment-name">
+                                    <img src="images/tractor.png" alt="Tractor">
+                                    AgriPro 7200 Tractor
+                                </div>
+                            </td>
+                            <td>200 HP</td>
+                            <td><span class="table-tag tag-diesel">Diesel</span></td>
+                            <td>50 – 150 Acres</td>
+                            <td><strong>₹250</strong></td>
+                            <td><strong>₹1,500</strong></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-equipment-name">
+                                    <img src="images/harvester.png" alt="Harvester">
+                                    HarvestKing 9500 Combine
+                                </div>
+                            </td>
+                            <td>350 HP</td>
+                            <td><span class="table-tag tag-diesel">Diesel</span></td>
+                            <td>100 – 300 Acres</td>
+                            <td><strong>₹450</strong></td>
+                            <td><strong>₹2,800</strong></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-equipment-name">
+                                    <img src="images/seeder.png" alt="Seeder">
+                                    SeedMaster 3000 Planter
+                                </div>
+                            </td>
+                            <td>PTO Driven</td>
+                            <td><span class="table-tag tag-electric">N/A</span></td>
+                            <td>30 – 100 Acres</td>
+                            <td><strong>₹150</strong></td>
+                            <td><strong>₹900</strong></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-equipment-name">
+                                    <img src="images/cultivator.png" alt="Cultivator">
+                                    TerraForce 1500 Cultivator
+                                </div>
+                            </td>
+                            <td>PTO Driven</td>
+                            <td><span class="table-tag tag-electric">N/A</span></td>
+                            <td>20 – 80 Acres</td>
+                            <td><strong>₹120</strong></td>
+                            <td><strong>₹700</strong></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-equipment-name">
+                                    <img src="images/sprayer.png" alt="Sprayer">
+                                    CropGuard 800 Sprayer
+                                </div>
+                            </td>
+                            <td>180 HP</td>
+                            <td><span class="table-tag tag-diesel">Diesel</span></td>
+                            <td>50 – 200 Acres</td>
+                            <td><strong>₹300</strong></td>
+                            <td><strong>₹1,800</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="common.js"></script>
+    <script src="catalog.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+.detail-hero {
+    padding: 40px 0;
+    background: var(--green-50);
+}
+
+.detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.detail-image-wrapper {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.detail-image-wrapper img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.detail-info {
+    padding: 20px 0;
+}
+
+.detail-category {
+    display: inline-block;
+    background: var(--green-100);
+    color: var(--green-700);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.detail-info h1 {
+    font-size: 2.4rem;
+    margin-bottom: 16px;
+}
+
+.detail-info>p {
+    font-size: 1rem;
+    color: var(--gray-600);
+    margin-bottom: 32px;
+    line-height: 1.8;
+}
+
+.detail-price-box {
+    background: linear-gradient(135deg, var(--green-700), var(--green-800));
+    color: var(--white);
+    padding: 24px 32px;
+    border-radius: var(--radius-md);
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail-price {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+}
+
+.detail-price span {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.spec-box {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    transition: var(--transition);
+}
+
+.spec-box:hover {
+    border-color: var(--green-300);
+    box-shadow: var(--shadow-sm);
+}
+
+.spec-box-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gray-500);
+    margin-bottom: 6px;
+}
+
+.spec-box-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--green-900);
+}
+
+.summary-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--green-200);
+}
+
+.summary-header h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    color: var(--green-800);
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 0.95rem;
+}
+
+.summary-row.total {
+    border-top: 2px solid var(--green-300);
+    margin-top: 12px;
+    padding-top: 16px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--green-800);
+}
+
+.summary-label {
+    color: var(--gray-600);
+}
+
+.summary-value {
+    font-weight: 600;
+    color: var(--gray-800);
+}
+
+.spec-table-section {
+    background: linear-gradient(180deg, var(--green-50), var(--white));
+    padding-bottom: 100px;
+}
+
+.spec-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+}
+
+.spec-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-200);
+    transition: var(--transition);
+    animation: fadeInUp 0.5s ease backwards;
+}
+
+.spec-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.spec-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.spec-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.spec-card:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.spec-card:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.spec-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--green-300);
+}
+
+.spec-card-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 24px 24px 0;
+}
+
+.spec-card-top img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    background: var(--green-50);
+    border-radius: var(--radius-sm);
+    padding: 8px;
+}
+
+.spec-card-top h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    color: var(--gray-800);
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.spec-card-type {
+    font-size: 0.78rem;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+}
+
+.spec-pills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px 24px;
+}
+
+.spec-pill {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+    padding: 12px 14px;
+    transition: var(--transition);
+}
+
+.spec-pill:hover {
+    border-color: var(--green-300);
+    background: var(--green-50);
+}
+
+.spec-pill-label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--gray-500);
+    margin-bottom: 4px;
+}
+
+.spec-pill-value {
+    display: block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--gray-800);
+}
+
+.spec-pill-value.fuel-diesel {
+    color: var(--earth-700);
+}
+
+.spec-pill-value.fuel-na {
+    color: var(--gray-500);
+    font-weight: 500;
+}
+
+.spec-card-pricing {
+    display: flex;
+    gap: 12px;
+    padding: 0 24px 24px;
+}
+
+.spec-price-chip {
+    flex: 1;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.spec-price-chip.monthly {
+    background: linear-gradient(135deg, var(--green-50), var(--green-100));
+    border-color: var(--green-300);
+}
+
+.spec-price-label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--gray-500);
+    margin-bottom: 4px;
+}
+
+.spec-price-value {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--green-800);
+    font-family: 'Inter', sans-serif;
+}
+
+/* ── Keep old table-related styles for compatibility ── */
+
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    min-width: 800px;
+}
+
+.comparison-table thead {
+    background: linear-gradient(135deg, var(--green-800) 0%, var(--green-700) 100%);
+}
+
+.comparison-table th {
+    padding: 18px 24px;
+    text-align: left;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.comparison-table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--gray-200);
+    font-size: 0.9rem;
+    color: var(--gray-700);
+}
+
+.comparison-table tbody tr {
+    transition: var(--transition);
+}
+
+.comparison-table tbody tr:hover {
+    background: var(--green-50);
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gray-700);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group select {
+    padding: 14px 18px;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--gray-800);
+    transition: var(--transition);
+    background: var(--white);
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: var(--green-500);
+    box-shadow: 0 0 0 4px rgba(92, 184, 92, 0.15);
+}
+
+@media (max-width: 1024px) {
+    .detail-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .detail-price-box {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .specs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .spec-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .spec-pills {
+        grid-template-columns: 1fr;
+    }
+}
