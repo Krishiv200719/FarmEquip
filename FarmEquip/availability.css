@@ -78,8 +78,6 @@
     align-items: start;
 }
 
-/* ── Form Card ─────────────────────── */
-
 .booking-card {
     background: var(--white);
     border-radius: var(--radius-lg);
@@ -122,8 +120,6 @@
     font-size: 0.92rem;
     color: var(--gray-600);
 }
-
-/* ── Step Indicator ────────────────── */
 
 .form-steps {
     display: flex;
@@ -181,8 +177,6 @@
     background: var(--gray-300);
     margin: 0 4px;
 }
-
-/* ── Form Grid ─────────────────────── */
 
 .form-grid {
     display: grid;
@@ -258,8 +252,6 @@
     box-shadow: 0 8px 28px rgba(58, 125, 52, 0.35);
     transform: translateY(-2px);
 }
-
-/* ── Summary Card (Right) ──────────── */
 
 .summary-card {
     background: var(--white);

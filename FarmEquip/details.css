@@ -313,8 +313,6 @@
     font-family: 'Inter', sans-serif;
 }
 
-/* ── Keep old table-related styles for compatibility ── */
-
 .table-wrapper {
     overflow-x: auto;
     border-radius: var(--radius-lg);

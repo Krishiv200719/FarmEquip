@@ -85,7 +85,6 @@ function checkEquipmentAvailability() {
         (discount > 0 ? '<div class="summary-row"><span class="summary-label">Discount</span><span class="summary-value" style="color: var(--green-600);">-₹' + discountAmount.toLocaleString() + '</span></div>' : '') +
         '<div class="summary-row total"><span class="summary-label">Total Cost</span><span class="summary-value">₹' + totalCost.toLocaleString() + '</span></div>';
 
-    // Hide placeholder and show result
     placeholder.style.display = 'none';
     resultDiv.style.display = 'block';
 }

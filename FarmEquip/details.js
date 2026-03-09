@@ -43,12 +43,11 @@ function loadEquipmentDetails(id) {
 document.addEventListener('DOMContentLoaded', function () {
     var equipmentSelect = document.getElementById('equipmentSelectDetail');
     if (equipmentSelect) {
-        // Read ?id= query parameter from URL
+
         var urlParams = new URLSearchParams(window.location.search);
         var idParam = urlParams.get('id');
         var startId = idParam ? parseInt(idParam) : 1;
 
-        // Set the dropdown to the correct value
         equipmentSelect.value = String(startId);
 
         equipmentSelect.addEventListener('change', function () {

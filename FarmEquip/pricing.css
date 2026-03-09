@@ -64,10 +64,6 @@
     font-size: 1.1rem;
 }
 
-/* ──────────────────────────────────────
-   SEASONAL PACKAGES — PRICING CARDS
-   ────────────────────────────────────── */
-
 .packages-section {
     background: var(--gray-50);
 }
@@ -257,10 +253,6 @@
     text-align: center;
 }
 
-/* ──────────────────────────────────────
-   EQUIPMENT RATE CARDS
-   ────────────────────────────────────── */
-
 .rates-section {
     background: linear-gradient(180deg, var(--white), var(--green-50));
 }
@@ -393,10 +385,6 @@
     gap: 6px;
 }
 
-/* ──────────────────────────────────────
-   COMPARISON CARDS
-   ────────────────────────────────────── */
-
 .comparison-section {
     background: var(--gray-50);
 }
@@ -518,10 +506,6 @@
     font-weight: 600;
     color: var(--gray-800);
 }
-
-/* ──────────────────────────────────────
-   CALCULATOR SECTION
-   ────────────────────────────────────── */
 
 .calculator-section {
     background: linear-gradient(180deg, var(--white), var(--green-50));
@@ -714,10 +698,6 @@
     font-weight: 600;
     color: var(--gray-800);
 }
-
-/* ──────────────────────────────────────
-   RESPONSIVE
-   ────────────────────────────────────── */
 
 @media (max-width: 1024px) {
     .pricing-cards {
